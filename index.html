@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flight Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flight-wrapper">
+        <header>
+            <div class="flight-animation">
+            </div>
+        </header>
+        <div class="book">
+            <div class="book__form">
+                <form action="" class="form">
+                    <div class="form__group">
+                        <label for="destination-from" class="form__label">From</label>
+                        <select name="from" id="destination-from" class="form__select">
+                            <option value="test">test</option>
+                            <option value="test">test</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="destination-to" class="form__label">To</label>
+                        <select name="to" id="destination-to" class="form__select">
+                            <option value="test">test</option>
+                            <option value="test">test</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="form__group ">
+
+                        <div class="form__date__radio-group">
+
+                            <div class="form__date-group">
+                                <label for="date" class="form__label ">When do you leave?</label>
+                                <input type="date" id="date" class="form__date">
+                            </div>
+                            <div class="form__radio-flex">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="roundtrip" name="trip">
+                                    <label for="roundtrip" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Round trip
+                                    </label>
+                                </div>
+
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="oneway" name="trip">
+                                    <label for="oneway" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        One way
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <button class="btn btn--blue">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+$primary-form-color: #003de6;
+
+.u-margin-bottom-verysmall {
+    margin-bottom: 0.1rem;
+}
+
+.flight-wrapper {
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 250px;
+}
+
+
+.form {
+    color: $primary-form-color;
+
+    &__group {
+        margin-bottom: 1.5rem;
+
+    }
+
+    &__radio-input {
+        display: none;
+    }
+
+    &__label {
+        font-size: 0.7rem;
+        color: $primary-form-color;
+        display: block;
+        margin-bottom: 0.1rem;
+        font-weight: 700;
+    }
+
+    &__select {
+        color: $primary-form-color;
+        width: 250px;
+        font-size: 18px;
+        height: 40px;
+        border: 2px solid $primary-form-color;
+        text-align-last: center;
+        appearance: none;
+    }
+
+    .btn {
+        width: 250px;
+        height: 40px;
+        border: none;
+        color: white;
+
+        &--blue {
+            background: $primary-form-color;
+        }
+    }
+
+    &__radio-group {
+        padding: 7px;
+
+    }
+
+    &__radio-label {
+        cursor: pointer;
+        position: relative;
+        padding-left: 2rem;
+        font-size: 0.7rem;
+    }
+
+    &__radio-button {
+        height: 1.1rem;
+        width: 1.1rem;
+        border: 3px solid $primary-form-color;
+        position: absolute;
+        top: -7px;
+        left: 0;
+
+        &::after {
+            content: '';
+            display: block;
+            height: .8rem;
+            width: .8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $primary-form-color;
+            opacity: 0;
+        }
+    }
+
+    &__radio-input:checked~&__radio-label &__radio-button::after {
+        opacity: 1;
+    }
+
+    &__date__radio-group {
+        display: flex;
+    }
+
+    &__date {
+        width: 250px;
+        height: 40px;
+        border: 2px solid $primary-form-color;
+        color: $primary-form-color;
+        text-align-last: center;
+        font-size: 18px;
+        width: 100%;
+        appearance: none;
+    }
+
+    &__date-group {
+        width: 64%;
+
+    }
+
+    &__radio-flex {
+        flex-basis: 36%
+    }
+}
